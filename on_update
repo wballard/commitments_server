@@ -1,2 +1,5 @@
 #!/usr/bin/env bash
 npm install
+rm "$(pwd)/commitments"
+ln -s "$(pwd)/commitments" "$(pwd)/node_modules/commitements/bin/commitements"
+

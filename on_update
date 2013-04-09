@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 npm install
 rm "$(pwd)/commitments"
-ln -s "$(pwd)/commitments" "$(pwd)/node_modules/commitments/bin/commitements"
+ln -s "$(pwd)/node_modules/commitments/bin/commitements" "$(pwd)/commitments"
 rm "$(pwd)/notify"
-ln -s "$(pwd)/notify" "$(pwd)/node_modules/notify/bin/notify"
+ln -s "$(pwd)/node_modules/notify/bin/notify" "$(pwd)/notify"
 

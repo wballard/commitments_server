@@ -1,0 +1,3 @@
+[submodule "commitments_ui"]
+	path = commitments_ui
+	url = git://github.com/wballard/commitments_ui.git

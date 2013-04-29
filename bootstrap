@@ -1,0 +1,7 @@
+#! /usr/bin/env bash
+
+superwatcher init
+superwatcher watch git://github.com/wballard/commitments_server.git ~/commitments
+superwatcher environment ~/commitments/environment
+superwatcher main superforker 8080 ~/commitments
+superwatcher start

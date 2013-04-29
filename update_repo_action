@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+git submodule update --recursive --init
 npm install
 rm "$(pwd)/commitments"
 ln -s "$(pwd)/node_modules/commitments/bin/commitments" "$(pwd)/commitments"

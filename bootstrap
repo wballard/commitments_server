@@ -1,6 +1,7 @@
 #! /usr/bin/env bash
 
 superwatcher init
+superwatcher stop
 superwatcher watch git://github.com/wballard/commitments_server.git ~/commitments
 superwatcher watch git://github.com/wballard/commitments_ui.git ~/commitments_ui
 superwatcher environment ~/commitments/environment

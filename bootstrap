@@ -1,11 +1,5 @@
 #! /usr/bin/env bash
 
-if [ ! -d ~/commitments/todos ]; then
-  mkdir -p ~/commitments/todos
-fi
-if [ ! -d ~/commitments/notify ]; then
-  mkdir -p ~/commitments/notify
-fi
 superwatcher init
 superwatcher stop
 superwatcher watch git://github.com/wballard/commitments_server.git ~/commitments

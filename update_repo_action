@@ -6,4 +6,6 @@ rm "$(pwd)/commitments"
 ln -s "$(pwd)/node_modules/commitments/bin/commitments" "$(pwd)/commitments"
 rm "$(pwd)/notify"
 ln -s "$(pwd)/node_modules/notify/bin/notify" "$(pwd)/notify"
+rm "$(pwd)/token"
+ln -s "$(pwd)/node_modules/token/bin/token" "$(pwd)/token"
 

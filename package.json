@@ -4,7 +4,8 @@
   "description": "Collection of command line packages for use with superforker",
   "dependencies": {
     "notify": "git://github.com/wballard/notify.git",
-    "commitments": "git://github.com/wballard/commitments.git"
+    "commitments": "git://github.com/wballard/commitments.git",
+    "token": "git://github.com/wballard/token.git"
   },
   "engine": {
     "node": ">=0.8.11"

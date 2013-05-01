@@ -9,6 +9,6 @@ if [ ! -d ~/commitments/tokens ]; then
   mkdir -p ~/commitments/tokens
 fi
 
-export TODOS=~/commitments/todos
-export NOTIFICATIONS=~/commitments/notify
-export TOKENS=~/commitments/tokens
+export COMMITMENTS_ROOT=~/commitments/todos
+export NOTIFY_ROOT=~/commitments/notify
+export TOKEN_ROOT=~/commitments/tokens

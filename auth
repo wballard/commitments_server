@@ -1,3 +1,2 @@
 #!/usr/bin/env bash
-echo Hi there $1...
-exit 1
+./token decode $1

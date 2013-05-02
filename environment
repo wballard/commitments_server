@@ -1,14 +1,5 @@
-#I consider these directories part of the environment
-if [ ! -d ~/commitments/todos ]; then
-  mkdir -p ~/commitments/todos
-fi
-if [ ! -d ~/commitments/notify ]; then
-  mkdir -p ~/commitments/notify
-fi
-if [ ! -d ~/commitments/tokens ]; then
-  mkdir -p ~/commitments/tokens
-fi
 
-export COMMITMENTS_ROOT=~/commitments/todos
-export NOTIFY_ROOT=~/commitments/notify
-export TOKEN_ROOT=~/commitments/tokens
+export COMMITMENTS_ROOT=~/var/commitments/todos
+export NOTIFY_ROOT=~/var/commitments/notify
+export TOKEN_ROOT=~/var/commitments/tokens
+

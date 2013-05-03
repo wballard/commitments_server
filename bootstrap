@@ -3,6 +3,6 @@
 superwatcher init
 superwatcher watch git://github.com/wballard/commitments_server.git ~/commitments_server
 superwatcher watch git://github.com/wballard/commitments_ui.git ~/commitments_ui
-superwatcher environment ~/commitments/environment
+superwatcher environment ~/commitments_server/environment
 superwatcher main superforker 8080 ~/commitments_server ~/commitments_ui
 superwatcher restart

@@ -2,10 +2,26 @@
 git submodule update --recursive --init
 rm -rf node_modules
 npm install
-rm "$(pwd)/commitments"
-ln -s "$(pwd)/node_modules/commitments/bin/commitments" "$(pwd)/commitments"
-rm "$(pwd)/notify"
-ln -s "$(pwd)/node_modules/notify/bin/notify" "$(pwd)/notify"
-rm "$(pwd)/token"
-ln -s "$(pwd)/node_modules/token/bin/token" "$(pwd)/token"
+rm "./commitments"
+ln -s "./node_modules/commitments/bin/commitments" "./commitments"
+rm "./notify"
+ln -s "./node_modules/notify/bin/notify" "./notify"
+rm "./token"
+ln -s "./node_modules/token/bin/token" "./token"
 
+source ./environment
+
+if [ ! -d ${COMMITMENTS_ROOT} ]; then
+  mkdir -p ${COMMITMENTS_ROOT}
+fi
+if [ ! -d ${NOTIFY_ROOT} ]; then
+  mkdir -p ${NOTIFY_ROOT}
+fi
+if [ ! -d ${TOKEN_ROOT} ]; then
+  mkdir -p ${TOKEN_ROOT}
+fi
+
+#make all the directories whole
+./token init
+./notify init
+./commitments init

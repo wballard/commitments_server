@@ -8,6 +8,10 @@ rm "./notify"
 ln -s "./node_modules/notify/bin/notify" "./notify"
 rm "./token"
 ln -s "./node_modules/token/bin/token" "./token"
+rm "./render"
+ln -s "./node_modules/render/bin/render" "./render"
+rm "./send"
+ln -s "./node_modules/send/bin/send" "./send"
 
 source ./environment
 

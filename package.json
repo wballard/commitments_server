@@ -4,6 +4,7 @@
   "description": "Collection of command line packages for use with superforker",
   "dependencies": {
     "render": "git://github.com/wballard/render.git",
+    "send": "git://github.com/wballard/send.git",
     "notify": "git://github.com/wballard/notify.git",
     "commitments": "git://github.com/wballard/commitments.git",
     "token": "git://github.com/wballard/token.git"

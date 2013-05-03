@@ -1,0 +1,10 @@
+#! /usr/bin/env bash
+./update_repo_action
+export DOMAIN=localhost:8080
+npm install
+superwatcher stop
+superwatcher init
+superwatcher environment ${PWD}/dev.environment
+superwatcher main superforker 8080 ${PWD} ~/commitments_ui
+superwatcher restart
+echo You are good to go, no need to restart unless you update superforker

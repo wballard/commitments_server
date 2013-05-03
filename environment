@@ -1,5 +1,6 @@
-
+# vim: set filetype=sh
 export COMMITMENTS_ROOT=~/var/commitments/todos
 export NOTIFY_ROOT=~/var/commitments/notify
 export TOKEN_ROOT=~/var/commitments/tokens
+export DOMAIN=commitments.us
 
